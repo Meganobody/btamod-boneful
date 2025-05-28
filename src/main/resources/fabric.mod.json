@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "bonefulmod",
+  "version": "${version}",
+
+  "name": "Boneful AKA Stone Bone Tools",
+  "description": "Mod to make your life harder.",
+  "authors": [
+    "Meganboody"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"bonefulmod.BonefulMod"
+    ],
+		"beforeGameStart": [
+			"bonefulmod.BonefulMod"
+		],
+		"recipesReady": [
+			"bonefulmod.BonefulMod"
+		],
+		"initModels": [
+			"bonefulmod.BonefulMod"
+		]
+	},
+  "mixins": [
+      "bonefulmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3"
+  },
+  "suggests": {
+  }
+}
